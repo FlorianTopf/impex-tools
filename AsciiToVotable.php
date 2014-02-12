@@ -3,6 +3,7 @@
 //@TODO add functionality for updating directory (only new files)
 // introduce cronjob for that!
 
+
 ini_set('memory_limit', '-1');
 
 function sxml_append(SimpleXMLElement $to, SimpleXMLElement $from){
