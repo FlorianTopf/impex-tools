@@ -20,7 +20,6 @@ EPNCore resources.
 EPNCore resources can be either inserted in PostgreSQL or MySQL instances.
 
 IMPEx DM MeasurementType to UCD conversion for EPNCore:
-
 activityIndex		    => meta.code;phys.magfield
 current				      => phys.elecCurrent
 dopplergram			    => spect.doppler.velocity
