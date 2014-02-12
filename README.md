@@ -20,35 +20,34 @@ EPNCore resources.
 EPNCore resources can be either inserted in PostgreSQL or MySQL instances.
 
 IMPEx DM MeasurementType to UCD conversion for EPNCore:
-activityIndex		    => meta.code;phys.magfield
-current				      => phys.elecCurrent
-dopplergram			    => spect.doppler.velocity
-dust				        => phys.particle.dust
-electricfield		    => phys.elecField
-energeticparticles	=> phys.particle
+activityIndex		    => meta.code;phys.magfield,
+current				      => phys.elecCurrent,
+dopplergram			    => spect.doppler.velocity,
+dust				        => phys.particle.dust,
+electricfield		    => phys.elecField,
+energeticparticles	=> phys.particle,
 ephemeris			      => pos.bodyrc,
-imageintensity		  => phot.flux;obs.image
-instrumentstatus    => instr.setup;meta.code.status
-ioncomposition		  => phys.atmol.ionStage
-irradiance			    => phot.flux
-magneticfield		    => phys.magField
-magnetogram			    => phys.magField;obs.image
-neutralatomimages	  => phys.atmol;obs.image
-neutralgas			    => phys.atmol
-radiance			      => phot.flux.density
-spectrum			      => spect
-thermalplasma		    => phys.particle
-wave				        => em.radio
-wave.active			    => em.radio
+imageintensity		  => phot.flux;obs.image,
+instrumentstatus    => instr.setup;meta.code.status,
+ioncomposition		  => phys.atmol.ionStage,
+irradiance			    => phot.flux,
+magneticfield		    => phys.magField,
+magnetogram			    => phys.magField;obs.image,
+neutralatomimages	  => phys.atmol;obs.image,
+neutralgas			    => phys.atmol,
+radiance			      => phot.flux.density,
+spectrum			      => spect,
+thermalplasma		    => phys.particle,
+wave				        => em.radio,
+wave.active			    => em.radio,
 wave.passive		    => em.radio
 
 IMPEx DM SimulationProdoct to EPNCore dataproduct_type conversion:
-
-3dcubes			  => vo
-2dcuts			  => im
-timeseries		=> ts
-spatialseries	=> sv
-lines			    => sv
+3dcubes			  => vo,
+2dcuts			  => im,
+timeseries		=> ts,
+spatialseries	=> sv,
+lines			    => sv,
 spectra			  => ds or sp
 
 
