@@ -216,7 +216,7 @@ function FullIMPExToArray($configFileURL){
 	$confg=simplexml_load_file($configFileURL);
 	$countLine=0;
 	$Table=array();
-	//@TODO sometimes there are more than one tree elements
+	//@TODO sometimes there are more than one tree element
 	foreach($confg->database as $db){
 		//@TODO observational trees are not compatible atm
 		if($db["type"] == "simulation"){
