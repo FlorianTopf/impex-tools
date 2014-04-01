@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ri:Resource status="active" updated="2010-02-11T00:14:00.00" created="2009-01-01T12:00:00.00"
+   xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0"
+   xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ivoa.net/xml/RegistryInterface/v1.0 http://www.ivoa.net/xml/RegistryInterface/v1.0 http://www.ivoa.net/xml/VOResource/v1.0 http://www.ivoa.net/xml/VOResource/v1.0"
+   xsi:type="vr:Organisation">
+   <title>Laboratoire d'études spatiales et d'instrumentation en astrophysique</title>
+   <shortName>LESIA</shortName>
+   <identifier>ivo://vopdc.obspm/lesia</identifier>
+   <curation>
+      <publisher ivo-id="ivo://vopdc.obspm/lesia">VO-Paris Data Centre - LESIA</publisher>
+      <creator>
+         <name>Observatoire de Paris - LESIA</name>
+         <logo>http://vo.obspm.fr/logo/lesia.png</logo>
+      </creator>
+      <date>2009-01-01</date>
+      <contact>
+         <name>J. Aboudarham</name>
+         <address>Observatoire de Paris, 5 place Jules Jansen, 92195 Meudon, France</address>
+         <email>Jean.Aboudarham@obspm.fr</email>
+         <telephone>+33145077784</telephone>
+      </contact>
+   </curation>
+   <content>
+      <!-- subject = IAU thesaurus key words (http://www.mso.anu.edu.au/library/thesaurus/) -->
+      <subject>Virtual Observatory</subject>
+      <subject>Solar System</subject>
+      <subject>Planetary Systems</subject>
+      <subject>Comets</subject>
+      <subject>TBD</subject>
+      <description>TBD</description>
+      <referenceURL>http://lesia.obspm.fr/</referenceURL>
+      <type>Organisation</type>
+      <contentLevel>General</contentLevel>
+      <contentLevel>University</contentLevel>
+      <contentLevel>Research</contentLevel>
+      <contentLevel>Amateur</contentLevel>
+      <relationship>
+         <relationshipType>related-to</relationshipType>
+         <relatedResource ivo-id="ivo://vopdc.obspm">VO-Paris Data Centre</relatedResource>
+      </relationship>
+   </content>
+</ri:Resource>

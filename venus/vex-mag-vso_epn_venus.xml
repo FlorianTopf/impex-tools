@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ri:Resource status="active" updated="2010-02-11T00:14:00.00" created="2009-01-01T12:00:00.00"
+   xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0"
+   xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0"
+   xmlns:cea="http://www.ivoa.net/xml/CEA/v1.0rc1"
+   xmlns:osn="http://www.ivoa.net/xml/OpenSkyNode/v0.2" xmlns:sia="http://www.ivoa.net/xml/SIA/v1.0"
+   xmlns:sla="http://www.ivoa.net/xml/SLA/v0.2" xmlns:ssa="http://www.ivoa.net/xml/SSA/v0.4"
+   xmlns:tsa="http://www.ivoa.net/xml/TSA/v0.2"
+   xmlns:stc="http://www.ivoa.net/xml/STC/stc-v1.30.xsd"
+   xmlns:vg="http://www.ivoa.net/xml/VORegistry/v1.0"
+   xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.0"
+   xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xsi:schemaLocation="http://www.ivoa.net/xml/RegistryInterface/v1.0 http://www.ivoa.net/xml/RegistryInterface/RegistryInterface-v1.0.xsd http://www.ivoa.net/xml/VOResource/v1.0 http://www.ivoa.net/xml/VOResource/VOResource-v1.0.xsd http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/VODataService/VODataService-v1.0.xsd http://www.ivoa.net/xml/VOTable/v1.2 http://www.ivoa.net/xml/VOTable/v1.2 http://www.ivoa.net/xml/ConeSearch/v1.0 http://www.ivoa.net/xml/ConeSearch/ConeSearch-v1.0.xsd http://www.ivoa.net/xml/SIA/v1.0 http://www.ivoa.net/xml/SIA/SIA-v1.0.xsd http://www.ivoa.net/xml/SSA/v0.4 http://www.ivoa.net/xml/SSA/SSA-v0.4.xsd http://www.ivoa.net/xml/CEA/v1.0rc1 http://software.astrogrid.org/schema/vo-resource-types/CEAService/v1.0rc1/CEAService.xsd"
+   xsi:type="vs:CatalogService">
+   <title>Venus Express Magnetometer Data</title>
+   <shortName>VEX-MAG</shortName>
+   <identifier>ivo://vo-plasma.oeaw.ac.at/VEX_MAG_VSO/</identifier>
+   <curation>
+      <publisher ivo-id="ivo://vo-plasma.oeaw.ac.at/">IDIS Plasmanode</publisher>
+      <creator>
+         <name>Tielong Zhang, IWF Graz</name>
+         <logo>http://amda-idis.oeaw.ac.at/IWF_englisch_blau.png</logo>
+      </creator>
+      <date>2012-09-05</date>
+      <version>1</version>
+      <contact>
+         <name>Florian Topf</name>
+         <address>Space Research Institute - Austrian Academy of Sciences, Schmiedlstrasse 6, A-8042 Graz</address>
+         <email>florian.topf@oeaw.ac.at</email>
+      </contact>
+   </curation>
+   <content>
+      <!-- subject = IAU thesaurus key words (http://www.mso.anu.edu.au/library/thesaurus/) -->
+      <subject>Virtual Observatory</subject>
+      <subject>Planets</subject>
+	  <subject>Magnetosphere</subject>
+      <description>VEX-MAG is a space qualified magnetometer with two fluxgate sensors to measure 
+			the magnetic field magnitude and its direction. It consists of two sensors, 
+			one electronics box (including sensor electronics, data processing unit, and power supply) 
+			and a one meter long boom made from carbon fiber. One sensor is located on the tip of the 
+			boom and the other one is mounted on the surface of the satellite. This configuration of two 
+			sensors enables us to separate the spacecraft disturbance from the ambient magnetic field 
+			which is of scientific interest. Among the many scientific objectives of the magnetic field 
+			observation, we will define the Venus plasma boundary and study the solar wind interaction 
+			with the Venus atmosphere. In addition, the magnetic field data provide important information 
+			to other instruments aboard Venus Express, for example ASPERA, for any combined studies of the 
+			Venus plasma environment.</description>
+      <source>2008JE003215</source>
+      <referenceURL>http://www.agu.org/pubs/crossref/2008/2008JE003215.shtml</referenceURL>
+      <type>Archive</type>
+      <contentLevel>General</contentLevel>
+      <contentLevel>University</contentLevel>
+      <contentLevel>Research</contentLevel>
+      <relationship>
+         <relationshipType>related-to</relationshipType>
+         <relatedResource ivo-id="ivo://vo-plasma.oeaw.ac.at/">IDIS Plasmanode</relatedResource>
+      </relationship>
+   </content>
+   <!-- Table Access Service -->
+   <capability standardID="ivo://ivoa.net/std/TAP">
+      <interface role="std" xsi:type="vs:ParamHTTP">
+         <accessURL use="base">http://amda-idis.oeaw.ac.at:8070/__system__/tap/run/tap</accessURL>
+      </interface>
+   </capability>
+   <instrument>Venus Express/MAG</instrument>
+   <!-- TBD Coverage -->
+</ri:Resource>

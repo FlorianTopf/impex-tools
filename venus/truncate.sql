@@ -1,0 +1,1 @@
+TRUNCATE vex.data_links

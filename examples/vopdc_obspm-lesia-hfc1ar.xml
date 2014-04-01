@@ -1,0 +1,67 @@
+<ri:Resource created="2012-11-04T00:00:00Z" status="active" updated="2013-02-28T00:00:00Z" xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:tr="http://www.ivoa.net/xml/TAPRegExt/v1.0" xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/RegistryInterface/v1.0 http://www.ivoa.net/xml/RegistryInterface/v1.0 http://www.ivoa.net/xml/VODataService/v1.1 http://www.ivoa.net/xml/VODataService/v1.1 http://www.ivoa.net/xml/TAPRegExt/v1.0 http://www.ivoa.net/xml/TAPRegExt/v1.0" xsi:type="vs:CatalogService">
+   <validationLevel validatedBy="ivo://vopdc">3</validationLevel>
+   <title>Heliophysic active regions</title>
+   <shortName>hfc1ar</shortName>
+   <identifier>ivo://vopdc.obspm/lesia/hfc1ar/epn</identifier>
+   <curation>
+      <publisher ivo-id="ivo://vopdc.obspm/lesia">VO-Paris Data Centre - LESIA</publisher>
+      <creator>
+         <name>Observatoire de Paris - LESIA</name>
+         <logo>http://vo.obspm.fr/logo/lesia.png</logo>
+      </creator>
+      <creator>
+         <name>J. Aboudarham</name>
+      </creator>
+     <creator>
+         <name>X. Bonnin</name>
+      </creator>
+       
+      <contributor>VOPDC</contributor>
+      <contact>
+         <name>VOPDC support team</name>
+         <address>Observatoire de Paris VOPDC, bat. Perrault, 77 av. Denfert Rochereau, 75014 Paris, FRANCE</address>
+         <email>vo.paris@obspm.fr</email>
+         <telephone>+33140512089</telephone>
+      </contact>
+   </curation>
+   <content>
+      
+      <subject>Virtual Observatory</subject>
+      <subject>Solar Active Region</subject>
+       <description>Active Region of the SUN extract from Helio service.</description>
+      <source>TBD </source>
+      <referenceURL>http://voparis-helio.obspm.fr/</referenceURL>
+      <type>Catalog</type>
+      <contentLevel>General</contentLevel>
+      <contentLevel>University</contentLevel>
+      <contentLevel>Research</contentLevel>
+      <contentLevel>Amateur</contentLevel>
+      <relationship>
+         <relationshipType>related-to</relationshipType>
+         <relatedResource ivo-id="ivo://vopdc.obspm">VO-Paris Data Centre</relatedResource>
+      </relationship>
+   </content>
+   
+   <capability standardID="ivo://ivoa.net/std/TAP" xsi:type="tr:TableAccess">
+      <interface role="std" xsi:type="vs:ParamHTTP">
+         <accessURL use="base">http://voplus.obspm.fr:81/__system__/tap/run/tap</accessURL>
+      </interface>
+      <dataModel ivo-id="ivo://vopdc.obspm/std/EpnCore-1.0">EpnCore-1.0</dataModel>
+      <language>
+         <name>ADQL</name>
+         <version ivo-id="ivo://ivoa.net/std/ADQL#v2.0">2.0</version>
+      </language>
+      <outputFormat ivo-id="ivo://ivoa.net/std/TAPRegEXT#output-votable-td">
+         <mime>application/x-votable+xml</mime>
+         <alias>votable/td</alias>
+      </outputFormat>
+   </capability>
+   <tableset>
+      <schema>
+         <name>hfc1ar</name>
+         <table>
+            <name>hfc1ar.epn_core</name>
+         </table>
+      </schema>
+   </tableset>
+</ri:Resource>

@@ -1,0 +1,25 @@
+publisher: IDIS Plasmanode
+publisherID: ivo://vo-plasma.oeaw.ac.at/
+contact.name: Florian Topf
+contact.address: Schmiedlstrasse 6, A-8042 Graz
+contact.email: florian.topf@oeaw.ac.at
+creator.name: Tielong Zhang, IWF Graz
+creator.logo: http://amda-idis.oeaw.ac.at/IWF_englisch_blau.png
+
+_noresultwarning: Your query did not match any data.
+
+authority.creationDate: 2012-09-05 01:36:35.724489
+authority.title: Virtual Observatory Graz
+authority.shortName: VO-Graz
+authority.description: VO service originally designed for \
+access to Venus Express MAG data, which is tentatively growing.
+authority.referenceURL: http://europlanet-plasmanode.oeaw.ac.at/
+authority.managingOrg: ivo://vo-plasma.oeaw.ac.at/org
+organization.title: IWF Graz
+organization.description: Space Research Institute Graz \
+being part of the Austrian Academy of Sciences.
+organization.referenceURL: http://www.oeaw.ac.at/
+
+site.description: VO Graz provides access to a variety of services \
+developed within EuroPlaNet activities and beyond.
+
