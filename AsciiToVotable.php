@@ -1,7 +1,6 @@
 <?php
 
-//@TODO add functionality for updating directory (only new files)
-// introduce cronjob for that!
+//@TODO introduce cronjob for that!
 
 
 ini_set('memory_limit', '-1');

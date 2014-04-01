@@ -17,11 +17,11 @@
 ConvertIMPExToPgSQL();
 
 function ConvertIMPExToMySQL(){
-	$TreeURL="http://impex-fp7.fmi.fi/ws/Tree_FMI_HYB.xml";
+	//$TreeURL="http://impex-fp7.fmi.fi/ws/Tree_FMI_HYB.xml";
 	//$TreeURL="http://impex-fp7.fmi.fi/ws/Tree_FMI_GUMICS.xml";
 	//$TreeURL="http://impex.latmos.ipsl.fr/tree.xml";
 	//$TreeURL="http://dec1.sinp.msu.ru/~lucymu/paraboloid/SINP_tree.xml";
-	$ConfigURL="http://eup0183.fzg.oeaw.ac.at/config";
+	$ConfigURL="http://impex-portal.oeaw.ac.at/config";
 	$server="localhost";
 	$user="root";
 	$pass="";
@@ -695,7 +695,7 @@ function ObservedRegion($Element,$table,$line,$tree){
 	if(count($tmp)>0){
 		$region=implode(".",$tmp);
 	}
-	$table[$line]['target_name']=addToList($table[$line]['target_name'],strtolower($target));
+	$table[$line]['target_name']=addToList($table[$line]['target_name'],$target);
 	$table[$line]['target_region']=addToList($table[$line]['target_region'],strtolower($region));
 	if (in_array($target,$list_planet)){
 		$table[$line]['target_class']=addToList($table[$line]['target_class'],"planet");
